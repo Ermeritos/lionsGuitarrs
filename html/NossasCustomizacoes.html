@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Produto</title>
+
+    <link rel="stylesheet" href="../css/NossasCustomizacoes.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="logo">
+            <a href="#">
+                <img src="../img/Gemini_Generated_Image_kw99mhkw99mhkw99-removebg-preview.png" alt="logoimg">
+            </a>
+        </div>
+
+        <nav>
+            <ul class="nav-links">
+
+                <li>
+                    <a id="linka" href="../html/index.html">Home</a>
+                </li>
+
+                <li>
+                    <a id="linka" href="../html/NossasCustomizacoes.html">
+                        Nossas customizações
+                    </a>
+                </li>
+
+                <li>
+                    <a id="linka" href="#">Sobre nós</a>
+                </li>
+
+                <li>
+                    <a id="linka" href="#">Ajuda</a>
+                </li>
+
+                <li>
+                    <a id="linka" href="../html/loja.html">Produtos</a>
+                </li>
+
+                <li>
+                    <a id="linka" href="#">Custom</a>
+                </li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- TÍTULO -->
+    <p class="testep">customizações exclusivas</p>
+
+    <!-- CARDS -->
+    <div class="container">
+
+        <!-- CARD 1 -->
+        <div class="card">
+
+            <img src="../img/WarlockVerde.jpg" alt="WarlockVerde">
+
+            <div class="info">
+
+                <h2>Warlock Custom</h2>
+
+                <p class="descricao">
+                    B.C. Rich Warlock. Este modelo se destaca pelo acabamento verde,
+                    que reforça seu visual ousado.
+                </p>
+
+                <p class="preco">R$ 34.000</p>
+
+                <button class="btn" onclick="comprar()">
+                    Comprar
+                </button>
+
+            </div>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card">
+
+            <img src="../img/les-paul-custom.png" alt="Les Paul custom">
+
+            <div class="info">
+
+                <h2>Les Paul</h2>
+
+                <p class="descricao">
+                    Les Paul Custom é a definição de sofisticação.
+                    Ela foi projetada para ser a versão mais luxuosa da linha.
+                </p>
+
+                <p class="preco">R$ 30.000</p>
+
+                <button class="btn" onclick="comprar()">
+                    Comprar
+                </button>
+
+            </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card">
+
+            <img src="../img/StratoCustom.jpg" alt="Stratocaster Custom">
+
+            <div class="info">
+
+                <h2>Flying V</h2>
+
+                <p class="descricao">
+                    Design icônico e performance de palco impecável.
+                </p>
+
+                <p class="preco">R$ 25.000</p>
+
+                <button class="btn" onclick="comprar()">
+                    Comprar
+                </button>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function comprar() {
+            alert("Produto adicionado ao carrinho!");
+        }
+    </script>
+
+</body>
+
+</html>

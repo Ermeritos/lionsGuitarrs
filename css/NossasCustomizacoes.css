@@ -1,0 +1,155 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    min-height: 100vh;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: #0a0a0a;
+    color: #3f8cf1;
+
+    display: flex;
+    flex-direction: column;
+
+    padding-bottom: 50px;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0 5%;
+
+    background: #111;
+    border-bottom: 2px solid #3f8cf1;
+}
+
+/* LOGO */
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #3f8cf1;
+    text-transform: uppercase;
+}
+
+/* LINKS */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: rgb(52, 189, 243);
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+/* TÍTULO */
+.testep {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 40px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* CONTAINER DOS CARDS */
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+/* CARD */
+.card {
+    width: 280px;
+    background: #3f8cf1;
+    color: #d6d6d6;
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* IMAGEM */
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    background: #f4f4f4;
+}
+
+/* INFORMAÇÕES */
+.info {
+    padding: 20px;
+}
+
+.info h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/* DESCRIÇÃO */
+.descricao {
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 15px;
+    min-height: 40px;
+}
+
+/* PREÇO */
+.preco {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #d6d6d6;
+}
+
+/* BOTÃO */
+.btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+
+    border-radius: 8px;
+    border: 2px solid #00f2ff;
+
+    background: transparent;
+    color: #000000;
+
+    font-weight: bold;
+    font-size: 1rem;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #00f2ff;
+    color: black;
+    box-shadow: 0 0 15px #00f2ff;
+}
