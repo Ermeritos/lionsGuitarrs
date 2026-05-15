@@ -1,5 +1,5 @@
 /* RESET */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,40 +8,33 @@
 /* BODY */
 body {
     min-height: 100vh;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background: #0a0a0a;
     color: #3f8cf1;
-
     display: flex;
     flex-direction: column;
-
-    padding-bottom: 50px;
 }
 
 /* NAVBAR */
 .navbar {
     width: 100%;
-    height: 80px;
-
+    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 0 5%;
-
     background: #111;
     border-bottom: 2px solid #3f8cf1;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-/* LOGO */
-.logo {
-    font-size: 28px;
-    font-weight: bold;
-    color: #3f8cf1;
-    text-transform: uppercase;
+.logo-img {
+    height: 80px;
+    width: auto;
 }
 
-/* LINKS */
 .nav-links {
     display: flex;
     list-style: none;
@@ -51,105 +44,121 @@ body {
 .nav-links a {
     color: rgb(52, 189, 243);
     text-decoration: none;
-    font-weight: 500;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 22px;
     transition: 0.3s;
 }
 
 .nav-links a:hover {
     color: #ffffff;
+    text-shadow: 0 0 10px #3f8cf1;
 }
 
-/* TÍTULO */
+/* CONTEÚDO */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
 .testep {
-    font-size: 28px;
+    font-size: 32px;
     font-weight: bold;
-    margin: 40px 0;
+    margin-bottom: 40px;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+    text-align: center;
+    border-bottom: 3px solid #3f8cf1;
 }
 
 /* CONTAINER DOS CARDS */
 .container {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 35px;
     flex-wrap: wrap;
-    padding: 0 20px;
+    max-width: 1200px;
 }
 
 /* CARD */
 .card {
-    width: 280px;
-    background: #3f8cf1;
-    color: #d6d6d6;
-    border-radius: 12px;
+    width: 300px;
+    background: #3f8cf1; /* Cor azul original */
+    border-radius: 15px;
     overflow: hidden;
-
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-
-    transition: transform 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    transition: all 0.4s ease;
 }
 
 .card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-12px);
+    box-shadow: 0 15px 35px rgba(63, 140, 241, 0.4);
 }
 
-/* IMAGEM */
+/* IMAGEM NO CARD */
+.img-wrapper {
+    background: #fff; /* Fundo branco para destacar os instrumentos */
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
 .card img {
-    width: 100%;
-    height: 200px;
+    max-width: 100%;
+    max-height: 100%;
     object-fit: contain;
-    background: #f4f4f4;
 }
 
 /* INFORMAÇÕES */
 .info {
-    padding: 20px;
+    padding: 25px;
 }
 
 .info h2 {
-    margin-bottom: 10px;
-    font-size: 20px;
+    color: #000; /* Preto para contraste no azul */
+    margin-bottom: 12px;
+    font-size: 22px;
+    text-transform: uppercase;
 }
 
-/* DESCRIÇÃO */
 .descricao {
     font-size: 14px;
-    color: #000000;
-    margin-bottom: 15px;
-    min-height: 40px;
+    color: #111; /* Texto escuro para leitura sobre o azul */
+    margin-bottom: 20px;
+    min-height: 50px;
+    line-height: 1.4;
 }
 
 /* PREÇO */
 .preco {
-    font-size: 20px;
-    font-weight: bold;
-    margin: 10px 0;
-    color: #d6d6d6;
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: #fff; /* Branco para destacar */
 }
 
 /* BOTÃO */
 .btn {
     display: block;
     width: 100%;
-    padding: 12px;
-
-    border-radius: 8px;
-    border: 2px solid #00f2ff;
-
-    background: transparent;
-    color: #000000;
-
+    padding: 14px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    background: #0a0a0a;
+    color: #00f2ff; /* Ciano original */
     font-weight: bold;
     font-size: 1rem;
-
+    text-transform: uppercase;
     cursor: pointer;
-
     transition: all 0.3s ease;
 }
 
 .btn:hover {
     background: #00f2ff;
-    color: black;
-    box-shadow: 0 0 15px #00f2ff;
+    color: #000;
+    box-shadow: 0 0 20px #00f2ff;
 }

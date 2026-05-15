@@ -1,137 +1,141 @@
-
-
 /* Reset básico */
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 body {
-background-color: #000000;
-color: #4bccff;
+    background-color: #000000;
+    color: #4bccff;
 }
-/* Navbar */
+
+/* Navbar - Ajustada para distribuir logo, menu e busca */
 .navbar {
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 1rem 5%;
-background-color: rgb(143, 72, 38);
-background-image: url("../img/navbar_madeira.jpg");
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-color: rgb(0, 172, 240);
-position: sticky;
-top: 0;
-z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 5%;
+    background-color: rgb(143, 72, 38);
+    background-image: url("../img/navbar_madeira.jpg");
+    background-size: cover;
+    background-position: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    min-height: 120px; /* Garante espaço para a logo aparecer bem */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
+
 .nav-links {
-display: flex;
-list-style: none;
+    display: flex;
+    list-style: none;
+    gap: 15px;
+  
 }
-.nav-links li {
-margin: 0 15px;
-}
+
 .nav-links a {
-color:rgb(52, 189, 243);
-text-decoration: none;
-font-weight: 500;
-transition: color 0.3s;
+    color: rgb(26, 155, 241);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+    white-space: nowrap; /* Evita que o texto quebre linha */
+      font-size: 22px;
 }
+
 .nav-links a:hover {
-color: #3498db;
+    color: #ffffff;
+    text-shadow: 0 0 8px #4bccff;
 }
 
-.nav-link {
-  display: flex;
-  list-style: none;
-  gap: 20px;
-  align-items: center;
+/* Logo */
+.logo-img {
+    height: 100px; /* Aumentei um pouco para destaque */
+    width: auto;
+    display: block;
 }
 
-#linka {
-    color:rgb(26, 155, 241);
-}
 /* Barra de Pesquisa */
 .search-container {
-display: flex;
+    display: flex;
 }
+
 .search-container input {
-padding: 8px 12px;
-border: 2px solid #2a51fc; /* Cor Lilás na borda */
-background-color: #F3E5F5; /* Um lilás bem clarinho no fundo */
-border-radius: 4px 0 0 4px;
-outline: none;
-transition: border-color 0.3s;
-border-color: #306ef3; /* Lilás mais escuro ao clicar */
+    padding: 8px 12px;
+    border: 2px solid #306ef3;
+    background-color: #F3E5F5;
+    border-radius: 4px 0 0 4px;
+    outline: none;
 }
+
 .search-container button {
-padding: 8px 15px;
-border: none;
-background-color: #2d7ef7; /* Botão em tom de lilás médio */
-color: white;
-cursor: pointer;
-border-radius: 0 4px 4px 0;
-transition: background-color 0.3s;
+    padding: 8px 15px;
+    border: none;
+    background-color: #2d7ef7;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
 }
+
 /* Conteúdo Principal */
 .container {
-max-width: 1200px;
-margin: 20px auto;
-padding: 0 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
+
 .content-section {
-margin-bottom: 50px;
+    margin-bottom: 50px;
 }
+
 .content-section h2 {
-margin-bottom: 20px;
-border-left: 5px solid #2c76e6;
-padding-left: 10px;
+    margin-bottom: 25px;
+    border-left: 5px solid #2c76e6;
+    padding-left: 15px;
+    color: #4bccff;
 }
+
 /* Grid de Cards */
 .card-grid {
-display: flex;
-gap: 20px;
-flex-wrap: wrap;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
 }
+
 .card {
-flex: 1;
-min-width: 250px;
-background: rgb(31, 113, 207);
-border-radius: 8px;
-overflow: hidden;
-box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-transition: transform 0.3s;
+    flex: 1;
+    min-width: 280px;
+    background: rgb(31, 113, 207); /* Mantive seu azul */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
 }
+
 .card:hover {
-transform: translateY(-5px);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(44, 118, 230, 0.4);
 }
+
 .card-image {
-width: 100%;
-height: 180px;
-background-color: #ddd; /* Cor de fundo enquanto não há imagem */
+    width: 100%;
+    height: 200px;
+    background-color: #000000; /* Fundo branco para as guitarras PNG aparecerem bem */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.card-image img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
 .card h3 {
-padding: 15px;
-font-size: 1.1rem;
-text-align: center;
-}
-/* Garante que o container da logo não cresça demais */
-.logo {
-display: flex;
-align-items: center;
-}
-.logo-img {
-height: 100px; /* Ajuste a altura conforme necessário */
-width: auto; /* Mantém a proporção da imagem */
-display: block;
-}
-/* Opcional: Se quiser que o menu fique mais afastado da logo */
-.navbar {
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 10px 5%; /* Aumenta ou diminui o respiro lateral */
+    padding: 15px;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #000000ab; /* Branco para ler melhor sobre o fundo azul */
 }
